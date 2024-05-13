@@ -1,9 +1,9 @@
 <template>
   <main>
     <div class="flex flex-col items-center h-full w-full">
-      <Navbar class="w-full h-16 relative border-b-2" />
-      <Hero />
-      <About />
+      <Hero id="home" />
+      <About id="about" />
+      <Contact id="contact" />
     </div>
   </main>
 </template>

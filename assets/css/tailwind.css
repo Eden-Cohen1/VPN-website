@@ -7,8 +7,11 @@
     --color-primary: #dcdcf0;
     --color-sec: #c3c3e0ec;
     --color-third: #dcdcf0a6;
-    --color-btn: #0098df;
-    --color-btn-hover: #0372a5;
+    --color-btn: #3f5cdd;
+    /* --color-btn: #a6c0fc; */
+    /* --color-btn: #0098df; */
+    --color-btn-hover: #2b54d8;
+    /* --color-btn-hover: #0372a5; */
     --color-text: #3b485c;
     --color-btn-txt: #d1d8e0;
     --color-light-text: rgba(76, 76, 88, 0.844);
