@@ -1,13 +1,17 @@
 <template>
   <ul class="main-color vertical ws-black">
     <li>
-      <a href="#home"><Icon name="uil:home-alt" /></a>
+      <a href="#home"><Icon class="text-txt" name="uil:home-alt" /></a>
     </li>
     <li>
-      <a href="#about"><Icon name="fluent:person-info-24-filled" /></a>
+      <a href="#about"
+        ><Icon class="text-txt" name="fluent:person-info-24-filled"
+      /></a>
     </li>
     <li>
-      <a href="#contact"><Icon name="mdi:email-arrow-right-outline" /></a>
+      <a href="#contact"
+        ><Icon class="text-txt" name="mdi:email-arrow-right-outline"
+      /></a>
     </li>
   </ul>
 </template>

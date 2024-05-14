@@ -1,12 +1,14 @@
 <template>
-  <h1
-    class="font-bold text-[2.5rem] text-btn w-full md:text-right mt-24 md:mr-32 text-center"
+  <main
+    class="flex flex-col h-auto w-full pt-0 md:pl-24 md:pr-24 bg-secondary pb-24"
   >
-    קצת עלינו
-  </h1>
-  <main class="flex flex-col h-auto w-full mb-60 pt-0 md:pl-24 md:pr-24 gap-24">
+    <h1
+      class="font-bold text-[2.5rem] text-btn w-full md:text-right mt-24 md:right-[-50px] relative text-center"
+    >
+      קצת עלינו
+    </h1>
     <div
-      class="step mt-24 flex h-fit flex-col items-center gap-16 md:w-[100%] md:flex-row md:items-center"
+      class="step mt-24 flex h-fit flex-col items-center gap-16 md:w-[100%] md:flex-row md:items-center mb-24"
     >
       <div
         ref="text1"

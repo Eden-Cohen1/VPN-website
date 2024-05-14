@@ -20,6 +20,7 @@ const isScrolling = computed(() => {
       v-else
     />
     <slot />
+    <Footer />
   </main>
 </template>
 
