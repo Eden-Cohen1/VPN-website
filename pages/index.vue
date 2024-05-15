@@ -3,6 +3,7 @@
     <div class="flex flex-col items-center h-full w-full">
       <Hero id="home" />
       <About id="about" />
+      <Pricing id="pricing" />
       <Contact id="contact" />
     </div>
   </main>

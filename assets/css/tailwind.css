@@ -5,26 +5,28 @@
 @layer base {
   :root {
     --color-primary: #dcdcf0;
-    --color-sec: #d5d5f3ec;
+    --color-sec: #cacaf0ec;
+    /* --color-sec: #d5d5f3ec; */
     /* --color-sec: #c3c3e0ec; */
-    --color-third: #dcdcf0a6;
+    --color-third: #c8c8e7ec;
     --color-btn: #3f5cdd;
     /* --color-btn: #a6c0fc; */
     /* --color-btn: #0098df; */
     --color-btn-hover: #2b54d8;
     /* --color-btn-hover: #0372a5; */
     --color-text: #1f2630;
-    --color-btn-txt: #d1d8e0;
+    --color-btn-txt: #f1f2f3;
     --color-light-text: rgba(76, 76, 88, 0.844);
     --color-border: rgba(141, 141, 146, 0.185);
   }
   :root[class~="dark"] {
-    --color-primary: #1a2222;
+    --color-primary: #1a1f1f;
+    /* --color-primary: #1a2222; */
     --color-sec: #2c3236;
-    --color-third: #131620;
+    --color-third: #21272b;
     --color-btn: #5680e9;
     --color-btn-hover: #3367eb;
-    --color-text: #d1d8e0;
+    --color-text: #ffffff;
     --color-btn-txt: black;
     --color-border: rgba(255, 255, 255, 0.185);
     --color-light-text: rgba(255, 255, 255, 0.43);

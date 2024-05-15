@@ -9,30 +9,31 @@
         :src="`bg-right.png`"
       />
     </div>
+
     <Floaters />
     <div
-      class="flex flex-col m-auto mb-auto mt-16 gap-12 lg:text-[3.3rem] sm:m-3 sm:mr-12 text-txt z-10 text-[2rem] rounded-[3rem] sm:p-8"
+      class="flex flex-col m-auto mb-auto mt-16 gap-12 lg:text-[3.3rem] sm:m-3 sm:mr-12 text-txt z-10 text-[2rem] rounded-[3rem] sm:p-8 relative sm:right-[2vw] min-[1800px]:right-[5vw]"
     >
       <div class="flex flex-col items-center justify-center gap-2">
         <h1
-          class="sm:ml-auto relative font-bold text-btn text-[3rem] lg:text-md"
+          class="sm:ml-auto relative font-bold text-btn text-[2.5rem] lg:text-[3rem] italic"
         >
-          <span class="text-txt">MY-</span>VPN
+          <span class="text-txt">VPN-</span>BUBBLE
         </h1>
         <h1
-          class="sm:ml-auto relative mb-2 font-bold w-full text-[1.5rem] sm:text-[2rem]"
+          class="sm:ml-auto relative mb-2 font-bold w-full text-[1.5rem] sm:text-[1.7rem]"
         >
           הגנה מוחלטת בלחיצת כפתור.
         </h1>
       </div>
       <ul
-        class="sm:space-y-4 space-y-6 sm:text-2xl text-[1.15rem] font-bold pr-6 sm:pr-0"
+        class="sm:space-y-4 space-y-6 sm:text-xl text-[1.15rem] font-bold pr-6 sm:pr-0"
       >
         <li
           class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
         >
           <svg
-            class="flex-shrink-0 w-5 sm:w-8 h-auto text-btn"
+            class="flex-shrink-0 w-5 sm:w-6 h-auto text-btn"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -52,7 +53,7 @@
           class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
         >
           <svg
-            class="flex-shrink-0 w-5 sm:w-8 h-auto text-btn"
+            class="flex-shrink-0 w-5 sm:w-6 h-auto text-btn"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -72,7 +73,7 @@
           class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
         >
           <svg
-            class="flex-shrink-0 w-5 sm:w-8 h-auto text-btn"
+            class="flex-shrink-0 w-5 sm:w-6 h-auto text-btn"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -92,7 +93,7 @@
           class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
         >
           <svg
-            class="flex-shrink-0 w-5 sm:w-8 h-auto text-btn"
+            class="flex-shrink-0 w-5 sm:w-6 h-auto text-btn"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

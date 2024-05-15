@@ -1,7 +1,7 @@
 <script setup>
 import { animate } from "motion";
 
-const darkMode = ref(true);
+const darkMode = ref(false);
 const buttonSwitch = ref();
 
 const toggleDarkMode = () => {

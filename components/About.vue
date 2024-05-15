@@ -6,6 +6,7 @@
       class="font-bold text-[2.5rem] text-btn w-full md:text-right mt-24 md:right-[-50px] relative text-center"
     >
       קצת עלינו
+      <div class="ball max-w-[100px] max-h-[100px]"></div>
     </h1>
     <div
       class="step mt-24 flex h-fit flex-col items-center gap-16 md:w-[100%] md:flex-row md:items-center mb-24"
@@ -25,7 +26,7 @@
       </div>
       <div
         ref="image1"
-        class="img flex h-auto min-w-[15rem] max-w-[15rem] flex-col items-center"
+        class="img1 flex h-auto min-w-[15rem] max-w-[15rem] flex-col items-center rounded-full"
       >
         <NuxtImg :src="`bg-1.png`" />
       </div>
@@ -48,7 +49,7 @@
       </div>
       <div
         ref="image1"
-        class="img flex h-auto min-w-[14rem] max-w-[15rem] flex-col items-center gap-5"
+        class="img2 flex h-auto min-w-[15rem] max-w-[15rem] flex-col items-center gap-5 rounded-full"
       >
         <NuxtImg :src="`bg-2.png`" />
       </div>
@@ -56,4 +57,11 @@
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.img1 {
+  animation: float 7s ease-in-out infinite;
+}
+.img2 {
+  animation: float 7s ease-in-out infinite;
+}
+</style>
