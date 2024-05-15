@@ -1,6 +1,6 @@
 <template>
-  <main class="w-full bg-primary p-20">
-    <section class="bg-secondary w-[80%] m-auto p-5 rounded-2xl">
+  <main class="w-full bg-secondary p-20">
+    <section class="bg-primary w-[80%] m-auto p-5 rounded-2xl">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-txt">
@@ -17,7 +17,7 @@
         >
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-primary text-txt"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-secondary text-txt"
           >
             <h3 class="mb-4 text-2xl font-semibold">בסיסי</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -121,13 +121,13 @@
             </ul>
             <a
               href="#"
-              class="bg-primary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center text-txt dark:focus:ring-primary-900"
+              class="bg-secondary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center text-txt dark:focus:ring-primary-900"
               >Get started</a
             >
           </div>
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-primary text-txt"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-secondary text-txt"
           >
             <h3 class="mb-4 text-2xl font-semibold">סטנדרטי</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -231,13 +231,13 @@
             </ul>
             <a
               href="#"
-              class="bg-primary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center text-txt dark:focus:ring-primary-900"
+              class="bg-secondary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center text-txt dark:focus:ring-primary-900"
               >Get started</a
             >
           </div>
           <!-- Pricing Card -->
           <div
-            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-primary text-txt"
+            class="flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-secondary text-txt"
           >
             <h3 class="mb-4 text-2xl font-semibold">מתקדם</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -341,7 +341,7 @@
             </ul>
             <a
               href="#"
-              class="text-txt bg-primary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              class="text-txt bg-secondary-600 hover:bg-third focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-md hover:text-btn px-5 py-2.5 text-center dark:focus:ring-primary-900"
               >Get started</a
             >
           </div>

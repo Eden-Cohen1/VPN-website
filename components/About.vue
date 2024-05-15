@@ -1,9 +1,34 @@
+<script setup>
+import { animate, inView } from "motion";
+const text1 = ref(null);
+const text2 = ref(null);
+const image1 = ref(null);
+const image2 = ref(null);
+
+onMounted(() => {
+    const options = { duration: 2 };
+    inView(text1.value, (info) => {
+      animate(info.target, { x: [800, 0], opacity: [0, 1] }, options);
+    });
+    inView(image2.value, (info) => {
+      animate(info.target, { x: [-800, 0], opacity: [0, 1] }, { duration: 3 });
+    });
+    inView(text2.value, (info) => {
+      animate(info.target, { x: [-800, 0], opacity: [0, 1] }, options);
+    });
+    inView(image1.value, (info) => {
+      animate(info.target, { x: [-800, 0], opacity: [0, 1] }, { duration: 3 });
+    });  
+});
+
+
+</script>
 <template>
   <main
     class="flex flex-col h-auto w-full pt-0 md:pl-24 md:pr-24 bg-secondary pb-24"
   >
     <h1
-      class="font-bold text-[2.5rem] text-btn w-full md:text-right mt-24 md:right-[-50px] relative text-center"
+      class="font-bold text-[2.5rem] text-txt w-full md:text-right mt-24 md:right-[-50px] relative text-center"
     >
       קצת עלינו
       <div class="ball max-w-[100px] max-h-[100px]"></div>
@@ -36,7 +61,7 @@
       class="step mt-24 flex h-fit flex-col items-center gap-3 md:w-[100%] md:flex-row md:items-center justify-end md:gap-16 md:ml-24"
     >
       <div
-        ref="text1"
+        ref="text2"
         class="relative flex max-w-xl flex-col items-center gap-2 text-center text-txt md:order-1 md:items-start md:text-left md:top-0"
       >
         <h1 class="text-xl font-bold text-btn">למה דווקא אנחנו?</h1>
@@ -48,7 +73,7 @@
         </p>
       </div>
       <div
-        ref="image1"
+        ref="image2"
         class="img2 flex h-auto min-w-[15rem] max-w-[15rem] flex-col items-center gap-5 rounded-full"
       >
         <NuxtImg :src="`bg-2.png`" />

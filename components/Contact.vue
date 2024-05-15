@@ -1,6 +1,6 @@
 <template>
   <main
-    class="w-full flex flex-col justify-center items-center gap-6 pt-24 pb-24 bg-secondary"
+    class="w-full flex flex-col justify-center items-center gap-6 pt-24 pb-24 bg-primary"
   >
     <form
       name="contact"
@@ -12,21 +12,21 @@
       <input
         name="name"
         type="text"
-        class="rounded-2xl p-2 pt-1 bg-primary"
+        class="rounded-2xl p-2 pt-1 bg-secondary"
         placeholder="שם מלא"
         required
       />
       <input
         name="email address"
         type="email"
-        class="rounded-2xl p-2 pt-1 bg-primary text-txt"
+        class="rounded-2xl p-2 pt-1 bg-secondary text-txt"
         placeholder="אימייל"
         required
       />
       <textarea
         v-model="message"
         name="text"
-        class="rounded-2xl p-2 pt-1 bg-primary text-txt"
+        class="rounded-2xl p-2 pt-1 bg-secondary text-txt"
         placeholder="הודעה"
         @input="isFocused = true"
         @blur="isFocused = false"

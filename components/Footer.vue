@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col h-[25vh] bg-primary text-txt">
+  <main class="flex flex-col h-[25vh] bg-secondary text-txt">
     <h2 class="text-lg font-bold m-auto mb-2 mt-4">דברו איתנו</h2>
     <ul
       class="flex gap-[2.5rem] min-h-[6rem] w-full justify-center items-center border-none"
