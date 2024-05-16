@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <main
-    class="relative top-0 flex w-screen items-end border-b-[1px] border-borderColor pt-14 align-middle overflow-hidden h-[800px]"
+    class="relative top-0 flex w-screen items-end border-b-[1px] border-borderColor lg:pt-14 pt-28 align-middle overflow-hidden h-[800px] lg:pb-20"
   >
     <div class="absolute h-[80%] top-12">
       <NuxtImg
@@ -16,9 +16,9 @@
     >
       <div class="flex flex-col items-center justify-center gap-2">
         <h1
-          class="sm:ml-auto relative font-bold text-btn text-[2.5rem] lg:text-[3rem] italic"
+          class="main-header sm:ml-auto relative font-bold text-btn text-[3.5rem] lg:text-[4.2rem]"
         >
-          <span class="text-txt">VPN-</span>BUBBLE
+          <span class="text-txt">Net</span>guard
         </h1>
         <h1
           class="sm:ml-auto relative mb-2 font-bold w-full text-[1.5rem] sm:text-[1.7rem]"
@@ -134,5 +134,8 @@ svg {
 }
 .big-img {
   box-shadow: -10px 0px 10px 1px #000000;
+}
+.main-header {
+  font-family: "League Spartan", sans-serif;
 }
 </style>

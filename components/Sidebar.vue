@@ -1,16 +1,21 @@
 <template>
   <ul class="main-color vertical ws-black">
     <li>
-      <a href="#home"><Icon class="text-txt" name="uil:home-alt" /></a>
+      <a href="#home"><Icon class="text-txt text-xl" name="uil:home-alt" /></a>
     </li>
     <li>
       <a href="#about"
-        ><Icon class="text-txt" name="fluent:person-info-24-filled"
+        ><Icon class="text-txt text-xl" name="fluent:person-info-24-filled"
       /></a>
     </li>
     <li>
+      <li>
+      <a href="#plans"
+        ><Icon class="text-txt text-xl" name="solar:tag-price-bold"
+      /></a>
+    </li>
       <a href="#contact"
-        ><Icon class="text-txt" name="mdi:email-arrow-right-outline"
+        ><Icon class="text-txt text-xl" name="mdi:email-arrow-right-outline"
       /></a>
     </li>
   </ul>

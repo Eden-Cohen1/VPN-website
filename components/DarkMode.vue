@@ -4,7 +4,7 @@ import { animate } from "motion";
 const darkMode = ref(false);
 const buttonSwitch = ref();
 
-const toggleDarkMode = () => {
+const toggleDarkMode = (emit) => {
   darkMode.value = !darkMode.value;
   document.documentElement.classList.toggle("dark", darkMode.value);
   if (darkMode.value) {
@@ -12,20 +12,22 @@ const toggleDarkMode = () => {
   } else {
     animate(buttonSwitch.value, { x: ["100%", 0], duration: 300 });
   }
+  emit("mode", darkMode.value);
 };
+defineEmits(["ChangeMode"]);
 </script>
 
 <template>
   <div
-    @click="toggleDarkMode"
-    class="left-5 top-6 mt-4 ml-3 pr-[3.1rem] flex border-[1px] border-borderColor w-10 h-[30px] rounded-full bg-secondary cursor-pointer hover:border-slate-400"
+    @click="toggleDarkMode($emit)"
+    class="left-5 top-1 mt-4 ml-3 flex border-[1px] border-borderColor w-14 h-[30px] rounded-full bg-secondary cursor-pointer hover:border-slate-400 absolute z-30 justify-end"
   >
     <button
-      class="text-txt pl-0.5 pr-0.5 rounded-[50%] border-[1px] border-borderColor bg-primary"
+      class="text-txt w-[27px] rounded-[50%] border-[1px] border-borderColor bg-primary m-atuo items-center justify-center pb-0.5"
       ref="buttonSwitch"
     >
       <Icon v-if="darkMode" name="uil:moon" class="w-1 h-auto text-txt" />
-      <Icon v-else name="uil:sun" class="text-txt" />
+      <Icon v-else name="uil:sun" class="w-full h-auto text-txt" />
     </button>
   </div>
 </template>

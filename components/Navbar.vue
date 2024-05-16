@@ -10,7 +10,6 @@
       <a class="p-5 pt-0 hover:text-btnHover" href="#about">קצת עלינו</a>
       <a class="p-5 pt-0 hover:text-btnHover" href="#home">בית</a>
     </ul>
-    <DarkMode />
   </div>
 </template>
 

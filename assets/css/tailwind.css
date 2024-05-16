@@ -10,14 +10,15 @@
     /* --color-sec: #c3c3e0ec; */
     --color-third: #c8c8e7ec;
     --color-btn: #3f5cdd;
+    /* --color-btn: #3f5cdd; */
     /* --color-btn: #a6c0fc; */
     /* --color-btn: #0098df; */
     --color-btn-hover: #2b54d8;
     /* --color-btn-hover: #0372a5; */
-    --color-text: #1f2630;
+    --color-text: #13161a;
     --color-btn-txt: #f1f2f3;
     --color-light-text: rgba(76, 76, 88, 0.844);
-    --color-border: rgba(141, 141, 146, 0.185);
+    --color-border: rgba(141, 141, 146, 0.411);
   }
   :root[class~="dark"] {
     --color-primary: #1a1f1f;
