@@ -4,11 +4,10 @@
   --light-bg-sec: #c3c3e0ec;
 }
 * {
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-transition: background-color 150ms linear;
+  -ms-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
 }
 body,
 html {
@@ -19,6 +18,7 @@ html {
   overflow-x: hidden;
   background-color: var(--light-bg-sec);
 }
+
 body {
   height: 100vh;
 }

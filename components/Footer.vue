@@ -5,7 +5,7 @@
       class="flex gap-[2.5rem] min-h-[6rem] w-full justify-center items-center border-none"
     >
       <li class="whatsapp">
-        <a href="https://wa.me/+972536241757" target="_blank"
+        <a href="https://wa.me/+972544330296" target="_blank"
           ><Icon name="formkit:whatsapp"
         /></a>
       </li>

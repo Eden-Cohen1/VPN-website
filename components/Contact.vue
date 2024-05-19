@@ -5,48 +5,89 @@
     <form
       name="contact"
       class="flex flex-col gap-6 max-w-[800px] w-[80%] m-auto"
-      data-netlify="true"
+      @submit.prevent="sendEmail"
     >
       <h1 class="text-btn font-semibold text-2xl w-full">יצירת קשר</h1>
 
-      <input
+      <CustomInput
         name="name"
+        v-model="formData.name"
         type="text"
-        class="rounded-2xl p-2 pt-1 bg-secondary"
         placeholder="שם מלא"
+        :errors="res.getErrors('name')"
+        @update:modelValue="validate('name')"
+        as="input"
         required
       />
-      <input
+      <CustomInput
         name="email address"
+        v-model="formData.email"
         type="email"
-        class="rounded-2xl p-2 pt-1 bg-secondary text-txt"
         placeholder="אימייל"
+        :errors="res.getErrors('email')"
+        @update:modelValue="validate('email')"
+        as="input"
         required
       />
-      <textarea
-        v-model="message"
+      <CustomInput
+        name="phone number"
+        v-model="formData.number"
+        placeholder="מספר פלאפון"
+        :errors="res.getErrors('number')"
+        @update:modelValue="validate('number')"
+        as="input"
+        required
+      />
+      <CustomInput
+        v-model="formData.message"
+        class="h-[7.5rem] text-top break-words resize-none overflow-auto"
         name="text"
-        class="rounded-2xl p-2 pt-1 bg-secondary text-txt"
         placeholder="הודעה"
-        @input="isFocused = true"
-        @blur="isFocused = false"
-      ></textarea>
+        :errors="res.getErrors('message')"
+        @update:modelValue="validate('message')"
+        as="textarea"
+      />
       <input
-        class="p-2 rounded-2xl bg-btn text-white font-bold w-full m-auto"
+        class="p-2 rounded-2xl bg-btn text-white font-bold w-[80%] cursor-pointer hover:bg-btnHover ml-auto"
         type="submit"
         value="שלח"
-        :disabled="!rule"
       />
     </form>
   </main>
 </template>
 
 <script setup>
-const message = ref();
-const isFocused = ref(false);
-const rule = computed(() => {
-  const msgLength = message.value?.trim().length;
-  return msgLength >= 10 && msgLength <= 200;
+import suite from "~/validations/contact.js";
+
+let res = reactive(suite.get());
+const { send } = useMail();
+
+const formData = reactive({
+  name: "",
+  number: "",
+  email: "",
+  message: "",
 });
+
+const sendEmail = async () => {
+  console.log("asasdasdasd");
+  const result = await send({
+    to: "edenlalala23@gmail.com",
+    subject: "הודעה חדשה מהאתר",
+    text: `Name: ${formData.name}\nEmail: ${formData.email}\nPhone Number: ${formData.number}\nMessage: ${formData.message}`,
+  });
+  formData.name = "";
+  formData.email = "";
+  formData.message = "";
+  formData.number = "";
+};
+
+const validate = () => {
+  res = suite({
+    name: formData.name,
+    number: formData.number,
+    email: formData.email,
+  });
+};
 </script>
 <style scoped></style>

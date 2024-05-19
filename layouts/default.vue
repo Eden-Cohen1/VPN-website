@@ -1,11 +1,10 @@
 <script setup>
-const { width } = screenWidth();
 const { scroll } = scrolling();
+const { width } = screenWidth();
 
 const isMobile = computed(() => {
   return width.value < 680;
 });
-
 const isScrolling = computed(() => {
   return scroll.value;
 });
@@ -14,6 +13,7 @@ const isScrolling = computed(() => {
 <template>
   <main v-show="width">
     <Navbar v-if="!isMobile" class="w-full h-16 relative border-b-2" />
+
     <Sidebar
       :class="{ hidden: isScrolling }"
       class="sidebar w-[60px] z-20 top-[150px] right-0 fixed"
